@@ -1,22 +1,39 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home,
+    component: () => import(/* webpackChunkName: "about" */ '../views/AboutMe'),
+    meta: {
+      title: 'About me',
+    },
   },
   {
     path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    name: 'about-me',
+    component: () => import(/* webpackChunkName: "about" */ '../views/AboutMe'),
+    meta: {
+      title: 'About me',
+    },
+  },
+  {
+    path: '/portifolio',
+    name: 'portifolio',
+    component: () => import(/* webpackChunkName: "portifolio" */ '../views/Portifolio'),
+    meta: {
+      title: 'Portifolio',
+    },
+  },
+  {
+    path: '/contact',
+    name: 'contact-me',
+    component: () => import(/* webpackChunkName: "contact" */ '../views/ContactMe'),
+    meta: {
+      title: 'Contact me',
+    },
   },
 ];
 
@@ -24,6 +41,12 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes,
+});
+
+router.afterEach((to) => {
+  Vue.nextTick(() => {
+    document.title = `${document.title} | ${to.meta.title}`;
+  });
 });
 
 export default router;
