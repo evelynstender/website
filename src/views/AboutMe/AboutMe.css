@@ -1,0 +1,11 @@
+.aboutMe {
+    text-align: center;
+}
+
+.cat__pics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px 0;
+    font-size: 12px;
+}

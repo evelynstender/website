@@ -1,21 +1,15 @@
 module.exports = {
   filenameHashing: true,
   lintOnSave: false,
-  transpileDependencies: ['vuetify'],
-  // css: {
-  //   requireModuleExtension: true,
-  //   loaderOptions: {
-  //     css: {
-  //       localIdentName: '[path][name]---[local]---[hash:base64:5]',
-  //       camelCase: true,
-  //     },
-  //   },
-  // },
+  transpileDependencies: ["vuetify"],
   pages: {
     index: {
-      entry: 'src/main.js',
-      template: 'public/index.html',
-      filename: 'index.html',
+      entry: "src/main.js",
+      template: "public/index.html",
+      filename: "index.html",
     },
+  },
+  devServer: {
+    host: "localhost",
   },
 };

@@ -358,3 +358,14 @@ template {
 .v-application {
     font-family: 'Inconsolata', monospace !important;
 }
+
+/* Main app */
+
+.main__container {
+    font-weight: 500;
+}
+
+.routerView {
+    padding: 20px;
+    font-size: 20px;
+}
