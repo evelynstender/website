@@ -44,13 +44,13 @@
 
 <script>
 export default {
-  name: "App",
+  name: 'App',
   methods: {},
   computed: {
     // menuBarSize() {
     //     return window.width <= 525 ? '180' : '64';
     // }
-  }
+  },
 };
 </script>
 

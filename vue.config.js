@@ -1,15 +1,15 @@
 module.exports = {
   filenameHashing: true,
   lintOnSave: false,
-  transpileDependencies: ["vuetify"],
+  transpileDependencies: ['vuetify'],
   pages: {
     index: {
-      entry: "src/main.js",
-      template: "public/index.html",
-      filename: "index.html",
+      entry: 'src/main.js',
+      template: 'public/index.html',
+      filename: 'index.html',
     },
   },
   devServer: {
-    host: "localhost",
+    host: 'localhost',
   },
 };

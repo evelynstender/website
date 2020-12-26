@@ -17,11 +17,12 @@
 </template>
 
 <script>
-import LinkPreview from "@ashwamegh/vue-link-preview";
+import LinkPreview from '@ashwamegh/vue-link-preview';
+
 export default {
-  name: "Portifolio",
+  name: 'Portifolio',
   components: {
-    LinkPreview
+    LinkPreview,
   },
 };
 </script>

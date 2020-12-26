@@ -5,44 +5,44 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    component: () => import(/* webpackChunkName: "about" */ "../views/AboutMe"),
+    path: '/',
+    component: () => import(/* webpackChunkName: "about" */ '../views/AboutMe'),
     meta: {
-      title: "About me"
-    }
+      title: 'About me',
+    },
   },
   {
-    path: "/about",
-    name: "about-me",
-    component: () => import(/* webpackChunkName: "about" */ "../views/AboutMe"),
+    path: '/about',
+    name: 'about-me',
+    component: () => import(/* webpackChunkName: "about" */ '../views/AboutMe'),
     meta: {
-      title: "About me"
-    }
+      title: 'About me',
+    },
   },
   {
-    path: "/portifolio",
-    name: "portifolio",
-    component: () => import(/* webpackChunkName: "portifolio" */ "../views/Portifolio"),
+    path: '/portifolio',
+    name: 'portifolio',
+    component: () => import(/* webpackChunkName: "portifolio" */ '../views/Portifolio'),
     meta: {
-      title: "Portifolio"
-    }
+      title: 'Portifolio',
+    },
   },
   {
-    path: "/cv",
-    name: "cv",
-    component: () => import(/* webpackChunkName: "cv" */ "../views/CV"),
+    path: '/cv',
+    name: 'cv',
+    component: () => import(/* webpackChunkName: "cv" */ '../views/CV'),
     meta: {
-      title: "CV"
-    }
+      title: 'CV',
+    },
   },
   {
-    path: "/contact",
-    name: "contact-me",
-    component: () => import(/* webpackChunkName: "contact" */ "../views/ContactMe"),
+    path: '/contact',
+    name: 'contact-me',
+    component: () => import(/* webpackChunkName: "contact" */ '../views/ContactMe'),
     meta: {
-      title: "Contact me"
-    }
-  }
+      title: 'Contact me',
+    },
+  },
 ];
 
 const router = new VueRouter({
