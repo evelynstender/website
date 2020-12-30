@@ -10,7 +10,7 @@
           About me
         </v-btn>
 
-        <v-btn href="https://blog.evelynstender.com" text>
+        <v-btn href="/blog" text>
           Blog
         </v-btn>
         <v-btn href="/portifolio" text>

@@ -6,23 +6,25 @@
     >.
 
     <div class="challanges">
-      <div>
-        <LinkPreview
-          url="https://front-end-mentor-vert-sigma.vercel.app/profile-card-component"
-          max-width="500px"
+      <!-- <div> -->
+        <VueLinkPreview
+          title="aaa"
+          description="bbb"
+          domain='aaa'
+          class="linkPreview"
         />
-      </div>
+      <!-- </div> -->
     </div>
   </div>
 </template>
 
 <script>
-import LinkPreview from '@ashwamegh/vue-link-preview';
+import VueLinkPreview from '@evelynstender/vue-link-preview';
 
 export default {
   name: 'Portifolio',
   components: {
-    LinkPreview,
+    VueLinkPreview,
   },
 };
 </script>

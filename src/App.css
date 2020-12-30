@@ -359,6 +359,10 @@ template {
     font-family: 'Inconsolata', monospace !important;
 }
 
+.v-sheet {
+    height: 100%;
+}
+
 /* Main app */
 
 .main__container {
